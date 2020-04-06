@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+body{
+    font-family: 'Alegreya Sans';
+    background-color: #64b5f6;
+}
+
+
+
+.container{  
+    background-color: #fff;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:1em;
+/*   border-radius: 20px;*/
+    max-width: 1140px;
+    padding:16px;
+    padding-top:16px;
+    position:relative; 
+    /* acts as a ref point to positioned elements inside it */
+}
+
+/* Header and Nav Styles */
+
+header{
+    width:60%;
+    float:left;
+}
+
+header img{
+    max-width:100%;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+h2{
+    font-size:1.2em;
+    clear: both;
+}
+
+nav{
+    float:right;
+    width:30%;
+    padding-top: 1.5em;
+}
+
+.menu-button{
+    text-align: right;
+}
+    
+.menu-nav{
+    border: solid 1px #333;
+    position:absolute;
+    right:16px;
+    background-color: #fff;
+    width:200px;
+}
+
+.main-menu ul{
+    /*    display:none;*/
+        list-style-type: none;
+    }
+.main-menu li{
+    /* height:36px; */
+    padding-top:6px;
+    border-bottom: solid 1px #333;
+    padding-left:1em;
+    background-color: #9be7ff;
+}
+
+
+.main-menu li:last-child{ /* targets last list item */
+   border-bottom: none;
+    margin-bottom:0;
+}
+
+.main-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-menu form{
+    padding:5px;
+}
+
+.main-menu input{
+    width:65%;
+    border:solid 1px #ccc;
+    padding:5px;
+}
+
+.main-menu button{
+    width:30%;
+    border:solid 1px #ccc;
+    padding:5px;
+
+    float: right;
+}
+
+
+
+
+/* ******* */
+
+
+a{
+    color:#186898;
+}
+
+
+a:hover{
+    color:#bc477b;
+}
+
+
+
+
+.fluid-image{
+    width:100%;
+}
+
+p{
+    margin-bottom:1em;
+    margin-top:1em;
+}
+
+h3{
+    margin-top:1em;
+}
+
+
+.dropdown li{
+    border:none;
+}
+
+.dropdown li a{
+    display:block;
+    padding:6px;
+}
+
+.dropdown li a:hover{
+    background-color: aquamarine;
+}
+
+
+/* ***** Desktop styles  **** */
+
+@media(min-width: 768px){
+    
+     header{
+        width:30%;
+    }   
+
+     nav{
+        width:60%;
+    }   
+
+    .menu-button{
+        display: none;
+    }
+
+    .menu-nav{
+        display:block;
+        border: none;
+        position:static;
+        width:100%;
+        text-align: right;
+        }
+
+    .main-menu li{
+        height:auto;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-left:0;
+        display: inline-block;
+        background-color:transparent;
+        width:100px;
+        margin-left:1px;
+        margin-right:0;
+        text-align: center;
+        }
+
+        
+        .main-menu ul{
+            float:left;
+        }
+            
+
+        .main-menu form{
+            padding:0;
+            float:right;
+        }
+        
+        .main-menu input{
+            width:auto;
+
+        }
+        
+        .main-menu button{
+            width:auto;
+            float: none;
+        }
+    
+    
+    .dropdown ul{   /* selects the ul nested inside an element with a class dropdown */
+        display:none;
+    }
+    
+    /* when I hover over an element with the class dropdown.... */
+    
+    .dropdown:hover ul{
+        display:block;
+        position:absolute; /* to enable overlapping the dropdown menu */
+        width:150px;
+        background-color: #fff;
+        border: solid 1px #ccc;
+        padding:0;
+    }
+    
+    
+    .dropdown li{
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+      
+
+
+
+} /* end of Media Query */
